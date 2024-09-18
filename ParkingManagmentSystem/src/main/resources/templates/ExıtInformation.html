@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Thymeleaf Demo
+    </title>
+</head>
+
+<body >
+<div class="container">
+
+    <h1> Welcome to E Parking Management System </h1>
+
+
+    <p th:text="'(' + (${licensePlate} ?: 'N/A') + ') exited (' + (${slotLocation} ?: 'N/A') + ')'"></p>
+    <p th:text="'Park check out time: (' + (${time} ?: 'N/A') + ')'"></p>
+    <p th:text="'Goodbye (' + ${firstName} + ') (' + ${lastName} + ')'"></p>
+    <p th:text="'Stay in the park  (' + ${hour} + ') hours'"></p>
+    <p th:text="'Park fee :  (' + ${parkingFee} + ')Tl'"></p>
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+
+</html>
